@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StarCafe — コーヒーショップ</title>
+    <meta name="description" content="コーヒー、フード、リワード、店舗検索ができるカフェ公式サイト風サンプル。" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/workspace/styles/main.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23006241'/><text x='50' y='60' font-size='55' text-anchor='middle' fill='white'>☕</text></svg>">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="#home" aria-label="StarCafe ホーム">StarCafe</a>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="メニューを開く">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <div class="nav-links" id="primary-nav">
+          <a href="#menu">メニュー</a>
+          <a href="#rewards">リワード</a>
+          <a href="#gift">ギフト</a>
+          <a href="#finder">店舗検索</a>
+        </div>
+        <div class="nav-cta">
+          <button class="btn btn-outline" type="button">ログイン</button>
+          <button class="btn btn-primary" type="button">新規登録</button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-label="ヒーロー">
+        <div class="hero-media" role="img" aria-label="カフェの雰囲気の写真"></div>
+        <div class="hero-content container">
+          <h1>一日のはじまりに、ご褒美の一杯を。</h1>
+          <p>香り高いエスプレッソ、季節のフラペチーノ、焼きたてのペイストリー。あなたの近くの StarCafe へ。</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu">今すぐ注文</a>
+            <a class="btn btn-dark" href="#rewards">リワードを見る</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo-grid container" aria-label="季節のおすすめ">
+        <article class="promo-card">
+          <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1200&auto=format&fit=crop" alt="ホイップ付き季節のフラペチーノ">
+          <div class="promo-body">
+            <h3>季節のフラペチーノ</h3>
+            <p>今だけのリッチな味わいをどうぞ。</p>
+            <a href="#menu" class="link">詳しく</a>
+          </div>
+        </article>
+        <article class="promo-card">
+          <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?q=80&w=1200&auto=format&fit=crop" alt="カフェラテ">
+          <div class="promo-body">
+            <h3>カフェラテ</h3>
+            <p>きめ細やかなフォームミルクと深いコク。</p>
+            <a href="#menu" class="link">詳しく</a>
+          </div>
+        </article>
+        <article class="promo-card">
+          <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop" alt="ペイストリー">
+          <div class="promo-body">
+            <h3>焼きたてペイストリー</h3>
+            <p>コーヒーのお供に、甘いひととき。</p>
+            <a href="#menu" class="link">詳しく</a>
+          </div>
+        </article>
+      </section>
+
+      <section id="menu" class="menu-section container" aria-label="メニュー">
+        <header class="section-header">
+          <h2>メニュー</h2>
+          <p>お好みに合わせてカスタマイズ可能。</p>
+        </header>
+        <div class="menu-grid">
+          <a class="menu-tile" href="#">
+            <span class="emoji" aria-hidden="true">☕</span>
+            <h3>ホットコーヒー</h3>
+          </a>
+          <a class="menu-tile" href="#">
+            <span class="emoji" aria-hidden="true">🧊</span>
+            <h3>アイスコーヒー</h3>
+          </a>
+          <a class="menu-tile" href="#">
+            <span class="emoji" aria-hidden="true">🥤</span>
+            <h3>フラペチーノ</h3>
+          </a>
+          <a class="menu-tile" href="#">
+            <span class="emoji" aria-hidden="true">🥐</span>
+            <h3>フード</h3>
+          </a>
+          <a class="menu-tile" href="#">
+            <span class="emoji" aria-hidden="true">🫖</span>
+            <h3>ティー</h3>
+          </a>
+          <a class="menu-tile" href="#">
+            <span class="emoji" aria-hidden="true">🎁</span>
+            <h3>ギフト</h3>
+          </a>
+        </div>
+      </section>
+
+      <section id="rewards" class="rewards-section" aria-label="リワード">
+        <div class="container rewards-inner">
+          <div class="rewards-copy">
+            <h2>StarCafe リワード</h2>
+            <p>アプリで貯めて、ドリンクに交換。モバイルオーダー&ペイも便利。</p>
+            <div class="actions">
+              <button class="btn btn-primary">無料で始める</button>
+              <button class="btn btn-outline">詳細を見る</button>
+            </div>
+          </div>
+          <img class="rewards-image" src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop" alt="リワード特典のイメージ">
+        </div>
+      </section>
+
+      <section id="finder" class="finder-section container" aria-label="店舗検索">
+        <header class="section-header">
+          <h2>近くの店舗を探す</h2>
+          <p>郵便番号や地名で検索できます。</p>
+        </header>
+        <form class="finder-form" action="#" aria-label="店舗検索フォーム">
+          <input type="search" placeholder="例: 100-0001 / 渋谷" aria-label="検索キーワード" />
+          <button class="btn btn-dark" type="submit">検索</button>
+        </form>
+        <div class="finder-result" aria-live="polite"></div>
+      </section>
+
+      <section id="sustainability" class="sustainability-section" aria-label="サステナビリティ">
+        <div class="container">
+          <h2>サステナビリティ</h2>
+          <p>私たちはリユーザブルカップの推進や、責任あるコーヒーの調達に取り組んでいます。</p>
+          <a class="link" href="#">取り組みを見る</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>StarCafe について</h4>
+          <ul>
+            <li><a href="#">会社情報</a></li>
+            <li><a href="#">採用情報</a></li>
+            <li><a href="#">ニュース</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>コミュニティ</h4>
+          <ul>
+            <li><a href="#">サステナビリティ</a></li>
+            <li><a href="#">ダイバーシティ</a></li>
+            <li><a href="#">地域貢献</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>サポート</h4>
+          <ul>
+            <li><a href="#">よくある質問</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">利用規約</a></li>
+            <li><a href="#">プライバシー</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> StarCafe. このサイトは学習用サンプルです。</p>
+      </div>
+    </footer>
+
+    <script src="/workspace/scripts/main.js" defer></script>
+  </body>
+</html>
